@@ -36,6 +36,8 @@ The final output is a trained 1D Convolutional Neural Network (Conv1D) model tha
 
 ## **4. Workflow**
 
+![Project Workflow](https://github.com/UpekshaIndeewari/Deep-Learning-for-Multispectral-LULC-Analysis/blob/main/data/workflow.png)
+
 ### **5. Study area and data set**
 
 The study area is located in the center of the Sri Lanka specially in hill countryside. The area includes diverse land cover types such as urban, agricultural, forest, water, and barren lands.
@@ -57,6 +59,8 @@ The study area is located in the center of the Sri Lanka specially in hill count
 - The Digital Elevation Model (DEM) was added as an additional layer.
 
 - Sample points were collected for 9 classes and stored in a CSV file with “sample” and “classvalue” columns.
+- 
+![Landsat Image](https://github.com/UpekshaIndeewari/Deep-Learning-for-Multispectral-LULC-Analysis/blob/main/data/Landsat_image.png)
 
 **Data Splitting**
 
@@ -96,11 +100,15 @@ These values indicate that the model achieved modest classification performance 
 A normalized confusion matrix was generated using the test dataset.
 Diagonal values represented correctly classified pixels, while off-diagonal elements showed confusion between spectrally similar classes (e.g., vegetation vs. cropland).
 
+![Confusion Matrix](https://github.com/UpekshaIndeewari/Deep-Learning-for-Multispectral-LULC-Analysis/blob/main/Results/confusiin_martix.png)
+
 **Classification Map**
 
 The trained model was applied to the entire Landsat image by reshaping pixel data into (height × width, features) format. Each pixel was predicted using the CNN and reshaped back to the original spatial dimensions.
 
 The final classified raster displayed spatial distribution of each land cover class, though visual inspection suggested some class overlap due to low model accuracy.
+
+![Confusion Matrix](https://github.com/UpekshaIndeewari/Deep-Learning-for-Multispectral-LULC-Analysis/blob/main/Results/LanduseMAp_2024.png)
 
 ## **9. Discussion**
 
