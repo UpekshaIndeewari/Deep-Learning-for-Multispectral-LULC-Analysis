@@ -59,7 +59,7 @@ The study area is located in the center of the Sri Lanka specially in hill count
 - The Digital Elevation Model (DEM) was added as an additional layer.
 
 - Sample points were collected for 9 classes and stored in a CSV file with “sample” and “classvalue” columns.
-- 
+
 ![Landsat Image](https://github.com/UpekshaIndeewari/Deep-Learning-for-Multispectral-LULC-Analysis/blob/main/data/Landsat_image.png)
 
 **Data Splitting**
