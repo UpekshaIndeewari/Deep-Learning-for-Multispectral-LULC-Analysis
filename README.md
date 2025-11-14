@@ -9,7 +9,7 @@ The workflow combines:
 - Google Earth Engine (GEE) for data preprocessing and sample creation
 - Python (Keras + TensorFlow) for deep learning-based classification
 
-The final output is a trained 1D Convolutional Neural Network (Conv1D) model that predicts land cover classes from pixel-based spectral features.
+The final output is a trained 2D Convolutional Neural Network (Conv2D) model that predicts land cover classes from pixel-based spectral features.
 
 ## **2. Technologies Used**
 
@@ -72,7 +72,7 @@ All features were standardized using StandardScaler to improve model convergence
 
 **Model Design (Conv1D CNN)** 
 
-A one-dimensional convolutional neural network was implemented using the Keras Sequential API:
+A Two-dimensional convolutional neural network was implemented using the Keras Sequential API:
 
 **Model Training**
 
@@ -130,7 +130,7 @@ To improve performance, the following are recommended:
 ## **10. Conclusion**
 
 This project successfully demonstrated a reproducible workflow for land use and land cover classification using Landsat imagery and deep learning in Google Colab.
-Although model performance was modest (≈62% accuracy), the pipeline — from image preprocessing to classification map generation — was fully functional.
+Although model performance was modest (≈52% accuracy), the pipeline — from image preprocessing to classification map generation — was fully functional.
 Future improvements in data quantity and feature engineering are expected to significantly enhance accuracy and model reliability.
 
 ## Thank You!
